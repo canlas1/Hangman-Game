@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///Users/DennisCanlas/Desktop/Psychic-Game/index.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Psychic Game</title>
+  </head>
+  <body>
+
+    <!-- When we start playing the game, our HTML will be placed into this div. -->
+    <div id="letterGame">
+      <p>Guess what letter I"m thinking of</p>
+    </div>
+
+    <script type="text/javascript">
+      
+      var getRandomLetter = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+      for (var i = 0; i < getRandomLetter.length; i++) {
+        console.log(getRandomLetter[i]);
+      }
+
+      var wins = 0;
+      var losses = 0;
+      var guessLeft = 9;
+      var userGuess = "[]";
+
+
+
+      document.onkeyup = function(event){
+        var userGuess = event.key;
+        
+        var computerGuess = getRandomLetter[Math.floor(Math.random() * getRandomLetter.length)];
+
+        if (userGuess === computerGuess){
+          wins++;
+        }
+        
+        if (userGuess !== computerGuess){
+          (guessLeft - 1);
+
+        }
+
+        var html = "<p>Press any key to start playing!</p>" +
+         "<p>wins: " + wins + "</p>" +
+           "<p>losses: " + losses + "</p>" +
+           "<p>guessLeft: " + guess Left + "</p>" +
+           "<p>correctGuess: " + userGuess + "</p>" ;
+
+          // Injecting the HTML we just created into our div and updating the game information on our page.
+          document.querySelector("#letterGame").innerHTML = html;
+        
+      };
+
+
+      //   }
+ 
+
+
+      //   }
+
+
+
+
+      // }
+
+
+      //   conslole.log(getRandomLetter.length)
+
+      
+    
+     
+      
+      // ;
+      
+      // function ((getRandomLetter(upper))
+      // {
+      //     var letter = Math.floor(Math.random()*upper) + 1;
+      //     return letter;
+      // }
+
+      // while(true){
+      //   guess = prompt("I am thing of a letter in the alphabet?");
+      //   guessCount +=1;
+
+
+
+      // }
+
+
+
+
+//       }
+
+//       var randomLetter = getRandomLetter;
+
+
+
+//       var letter = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+      
+
+//        for (int i = 0; i < getRandomLetter.length(); i++) {
+//             displayArray[i] = '_';
+//         }
+
+//       var word = letter[Math.floor(Math.random() * letter.length)];
+
+
+//       document.getElementById("letter").textContent = letter;
+
+//       var getRandomLetter = function () {
+//     return words[Math.floor(Math.random() * words.length)];
+// };
+
+
+
+
+
+
+
+
+
+        
+      
+
+    </script>
+
+  
+
+</body></html>
