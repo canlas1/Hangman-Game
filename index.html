@@ -28,6 +28,11 @@
             <h1>Hangman<strong></strong><h1>
         </div>
 
+        <div class="targetClass">
+            <p>Press a key to start playing!</p>
+
+        </div>
+
             <div class="col-md-4">
 
                 <div id="image0">
@@ -52,62 +57,7 @@
 
 
     </div>
-    
-<!-- 
-# generateWord at random and store it in a variable
-# display the length of the word to the user
-# correctGuesses is less than the length of the word
-# prompt the user to guess a letter
-# if the guess is correct increment correctGuesses by 1
-# if the guess is incorrect increment incorrectGuesses by 1 
-# if the incorrectGuesses is greater than 8, tell the user 
-# they lost and exit the program
-# if correctGuesses is equal to the length of the word, tell the user they won
  
-#CHOOSE RANDOM WORD
-# The chosen word only includes letters (no numbers, symbols, or whitespace).
-# The chosen word should be randomly selected from a word bank.
-word_bank = ["hello", "goodbye", "bananas", "apples", "billboard", "puppies"]
-chosen_word = word_bank.sample
-puts chosen_word
-
-#SHOW WORD PROGRESS
-# Each round the word is displayed (e.g. Word: __mm_t)
-# Guessed letters are unmasked.
-# Hidden letters are shown as underscores.
-
-#SHOW REMAINING GUESSES
-# Each round display the number of chances remaining.
-# Display Chances remaining: CHANCES where CHANCES is an integer.
-
-#PROMPT FOR GUESS
-# Each round, the player is prompted for input.
-# The player's input should appear on the same line (no newline after the prompt).
-
-#GUESS LETTER OR WORD
-# When a player enters a single character, it guesses a letter.
-# When a player enters more than a single character, it guesses the word.
-
-#CHECK GUESSED LETTERS
-# If the guessed letter is within the word, those letters are unveiled.
-# Display the number of times the letter is found when it is present.
-# If the guessed letter is not within the word, subtract one from the chances remaining.
-# The user is alerted if the guess is not found.
-# If the guessed letter was already submitted, do not decrement the chances remaining.
-# Display an error message if the letter was already guessed.
-
-#CHECK GUESSED WORD
-# If the guessed word matches the hidden word, the player wins the game.
-# Output a congratulatory message if the guess was correct.
-# If the guessed word does not match the hidden word, the player loses the game.
-# Output an apologetic message if the guess was incorrect.
-
-#GAME OVER WHEN NO MORE CHANCES
-# The game ends when the number of chances remaining reaches zero.
-# The user is alerted that they have run out of guesses
-
- -->
-
 <script src="assets/javascript/game.js"></script>
 
 </body>
