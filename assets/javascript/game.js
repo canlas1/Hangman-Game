@@ -9,7 +9,17 @@
   // an array of letters
   var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-  var categories = ("Colors"); // array of topics
+  var categories = { 
+    blue: "What color is the Sky?",
+    yellow: "What color is the Sun?",
+    purple: "What color are grapes?",
+    green: "What color is grass?",
+    white:  "What color is paper?"
+
+  };
+
+
+ // array of topics
   var word = wordArr[i]; // selected word
   var guessesLeft = 10; // number of guess by user stored
   var lives = 7; // lives remaining for user
@@ -21,6 +31,9 @@
   // pick random word using Math.random this will generate a random number b/w 0 and 1 to get a whole number apply Math.floor, which rounds to the nearest whole number
   var randomWordArr = wordArr[Math.floor(Math.random() * wordArr.length)];
   console.log(randomWordArr);
+
+  var categoryArr = Object.keys(categories);
+    console.log(categoryArr);
 
   //created an empty array called answerArr and filled it with underscores (_) this has to match the number of letter in the randomWordArr
   var answerArr = [];
